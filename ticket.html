@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNR Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #b9e7c8;
+        }
+        .container {
+            background-color: rgb(249, 248, 249);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 420px;
+            height: 300px;
+
+        }
+        #password {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 250px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>  आपकी यात्रा मंगलमय हो...! </h2>
+        <h1>HAPPY JOURNEY</h1>
+        <div id="trainResults">
+            <!-- Available trains will be displayed here -->
+        </div>
+        <input type="text" id="password" readonly>
+        <br>
+        <button onclick="genPnrNumber()">Generate PNR Number</button>
+    </div>
+
+    <script>
+        function genPnrNumber() {
+            var characters = '0123456789';
+            var passwordLength = 16;
+            var password = '';
+
+            for (var i = 0; i < passwordLength; i++) {
+                var randomIndex = Math.floor(Math.random() * characters.length);
+                password += characters[randomIndex];
+            }
+            
+
+            document.getElementById('password').value = password;
+
+        }
+    </script>
+    
+
+    <script src="/script.js"></script>
+    
+</body>
+</html>

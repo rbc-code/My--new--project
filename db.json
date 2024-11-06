@@ -1,0 +1,45 @@
+{
+    "trains": [
+      {
+        "id": 1,
+        "name": "Express Train",
+        "trainNo": "22162",
+        "from": "Delhi",
+        "to": "Bhopal",
+        "departure": "08:00 AM",
+        "arrival": "12:00 PM",
+        "price": 890
+      },
+      {
+        "id": 2,
+        "name": "Sabarmati Express",
+        "trainNo": "22163",
+        "from": "Bhopal",
+        "to": "Jhansi",
+        "departure": "09:00 AM",
+        "arrival": "11:00 AM",
+        "price": 560
+      },
+      {
+        "id": 3,
+        "name": "Shatavadi Express",
+        "trainNo": "22164",
+        "from": "Indore",
+        "to": "Mumbai",
+        "departure": "10:00 PM",
+        "arrival": "06:00 AM",
+        "price": 1450
+      },
+      {
+        "id": 4,
+        "name": "Enter city Jabalpur",
+        "trainNo": "22187",
+        "from": "Bhopal",
+        "to": "Jabalpur",
+        "departure": "10:00 PM",
+        "arrival": "06:00 AM",
+        "price": 650
+      }
+    ]
+  }
+  
